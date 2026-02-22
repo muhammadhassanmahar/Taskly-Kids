@@ -1,0 +1,32 @@
+name: flutter_application_1
+description: Parent Child Task App
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.9.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+
+  # Firebase Core & Auth
+  firebase_core: ^2.22.0
+  firebase_auth: ^4.10.0
+
+  # HTTP package for connecting to backend API
+  http: ^1.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/logo.png
