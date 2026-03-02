@@ -1,18 +1,51 @@
-// GENERATED FILE – DO NOT EDIT MANUALLY
-// Firebase configuration for Flutter Web
+// File generated manually from Firebase Web config
+// ignore_for_file: type=lint
 
 import 'package:firebase_core/firebase_core.dart';
+import 'package:flutter/foundation.dart'
+    show defaultTargetPlatform, kIsWeb, TargetPlatform;
 
 class DefaultFirebaseOptions {
   static FirebaseOptions get currentPlatform {
-    return const FirebaseOptions(
-      apiKey: 'AIzaSyAborwuaZRX7MJ525CK4_eBOfLoC_tVqY4',
-      authDomain: 'parent-child-app-e05d6.firebaseapp.com',
-      projectId: 'parent-child-app-e05d6',
-      storageBucket: 'parent-child-app-e05d6.firebasestorage.app',
-      messagingSenderId: '179539713123',
-      appId: '1:179539713123:web:ee47d66b58dff6db0e6c56',
-      measurementId: 'G-DCGNY721Q2',
-    );
+    if (kIsWeb) {
+      return web;
+    }
+    switch (defaultTargetPlatform) {
+      case TargetPlatform.android:
+        return android;
+      case TargetPlatform.iOS:
+        return ios;
+      default:
+        throw UnsupportedError(
+          'DefaultFirebaseOptions are not supported for this platform.',
+        );
+    }
   }
+
+  static const FirebaseOptions web = FirebaseOptions(
+    apiKey: "AIzaSyCzThq5bxcqykGYDf1zFK1UrKTZXVd0Ee0",
+    authDomain: "taskly-kids.firebaseapp.com",
+    projectId: "taskly-kids",
+    storageBucket: "taskly-kids.firebasestorage.app",
+    messagingSenderId: "461535035050",
+    appId: "1:461535035050:web:ecf2f952b97fa534ab5ad3",
+    measurementId: "G-6SEY46H0SR",
+  );
+
+  static const FirebaseOptions android = FirebaseOptions(
+    apiKey: "AIzaSyCzThq5bxcqykGYDf1zFK1UrKTZXVd0Ee0",
+    appId: "1:461535035050:web:ecf2f952b97fa534ab5ad3",
+    messagingSenderId: "461535035050",
+    projectId: "taskly-kids",
+    storageBucket: "taskly-kids.firebasestorage.app",
+  );
+
+  static const FirebaseOptions ios = FirebaseOptions(
+    apiKey: "AIzaSyCzThq5bxcqykGYDf1zFK1UrKTZXVd0Ee0",
+    appId: "1:461535035050:web:ecf2f952b97fa534ab5ad3",
+    messagingSenderId: "461535035050",
+    projectId: "taskly-kids",
+    storageBucket: "taskly-kids.firebasestorage.app",
+    iosBundleId: "com.example.app", 
+  );
 }
